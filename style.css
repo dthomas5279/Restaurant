@@ -131,7 +131,7 @@ header{
 
 input[type="text"]{
   padding: 0.5rem 1rem 0.5rem 0rem;
-  font-family: 'Rubik', Arial, sans-serif
+  font-family: 'Rubik', Arial, sans-serif;
   letter-spacing: 2px;
   font-size: 15px;
   border: solid 1px black;
@@ -149,6 +149,7 @@ input[type="text"]{
   margin-right: 25%;
   margin-top: 0px;
   padding: 10rem 0px;
+  padding-top: 3rem;
   line-height: 2rem;
 
   padding-left: 10px;
@@ -159,15 +160,16 @@ input[type="text"]{
 .second{
   margin-top: 5px;
   padding: 0px;
+  
 }
 
-/*.story h6,
+.story h6,
 .story h2,
 .story p{
   background-color:rgb(255, 255, 255, 0.5);
   background-size: contain;
   padding-left: 10px;
-}*/
+}
 
 section.second > section > section{
   margin-top: 50px;
@@ -186,6 +188,7 @@ section.second > section > section{
   margin: 2% 5%;
   width: 85%;
   text-align: center;
+  border-top: solid 1px black;
 }
 
 
@@ -207,8 +210,14 @@ section.second > section > section{
 }
 
 .col img{
-  width: 80%;
+  width: 90%;
   height: 250px;
+}
+
+.col img:hover{
+  box-shadow: 10px 10px 10px #ccc;
+  width: 95%;
+  height: auto;
 }
 
 section li{
@@ -217,18 +226,24 @@ section li{
 }
 
 section > ul > li{
-  border-left: solid 2px black;
-  border-right: solid 2px black;
+  border: solid 2px black;
+
+}
+
+section > ul > li:hover{
+  color: white;
+  background-color: black;
 }
 /******************************************
 /* Hours
 /*******************************************/
 
 .hours{
+  border-top: solid 1px black;
   text-align: center;
   margin: 10px 5%;
 }
-.hours h2,
+
 .hours h3{
   padding-top: 20px;
 }
@@ -236,9 +251,12 @@ section > ul > li{
 .split{
   float: left;
   width: 50%;
-  
+
 }
 
+.split:first-child{
+  border-right: solid 1px black;
+}
 section.hours section{
   padding-top: 1%;
 }
@@ -251,10 +269,16 @@ section.hours section{
 .hours h6{
   line-height: 4rem;
   font-size: 1rem;
+  margin: 0;
 }
 
 .hours h4{
   font-size: 2rem;
+}
+
+.hours h5{
+  margin: 0;
+  margin-bottom: 2rem;
 }
 
 
@@ -264,6 +288,7 @@ section.hours section{
 /*******************************************/
 
 .test{
+  border-top: solid 1px black;
   margin: 2% 2%;
   text-align: center;
 }
@@ -300,7 +325,7 @@ section.hours section{
     display:none
   }
   i{
-    display:inline-block
+    display:inline-block;
     float:right;
   }
   

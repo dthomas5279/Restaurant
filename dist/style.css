@@ -1,0 +1,354 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* Fonts
+/*******************************************/
+
+body{
+  font-family: 'Rubik', Arial, sans-serif;
+  background-color: white;
+  letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5,h6{
+  font-family: 'Yeseva', Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+  font-size: 4rem;
+  line-height: 4.5rem;
+}
+
+h6{
+  font-size: 1.2rem;
+}
+
+p{
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/******************************************
+/* Header
+/*******************************************/
+
+header{
+  padding-bottom: 75px;
+  box-sizing: content-box;
+}
+
+header li{
+  display: inline-block;
+}
+
+nav{
+  text-align: right;
+    letter-spacing: 3px;
+  font-weight: 400;
+    padding: 1rem 0px;
+  
+}
+
+h1{
+  width: 30rem;
+  margin: 5rem 0 2rem 5rem;
+  font-size: 4rem;
+}
+
+form,input{
+  display: inline-block;
+}
+
+header section>ul li:first-child,
+form{
+  margin: 0 0 2rem 5rem;
+}
+
+header section>ul{
+  box-sizing: content-box;
+  text-align:center;
+  
+}
+
+
+header section>ul li{
+  padding-right: 2rem;
+
+  
+}
+
+header nav ul{
+  background-color: transparent;
+}
+
+header nav li{
+  background-color: rgb(255,255,255);
+}
+
+header nav li:hover {
+  color:white;
+  background-color: black;
+}
+
+header{
+  height: 35rem;
+  background-image: url("https://i.imgur.com/CCtJloS.jpg");
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: tan;
+}
+
+
+
+/******************************************
+/* Button
+/*******************************************/
+.btn{
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: tan;
+  color: white;
+  border:none;
+}
+
+input[type="text"]{
+  padding: 0.5rem 1rem 0.5rem 0rem;
+  font-family: 'Rubik', Arial, sans-serif
+  letter-spacing: 2px;
+  font-size: 15px;
+  border: solid 1px black;
+  
+}
+
+
+
+/******************************************
+/* Restaurant Story
+/*******************************************/
+.story{
+  margin-left: 40%;
+  width: 35%;
+  margin-right: 25%;
+  margin-top: 0px;
+  padding: 10rem 0px;
+  line-height: 2rem;
+
+  padding-left: 10px;
+  
+  
+}
+
+.second{
+  margin-top: 5px;
+  padding: 0px;
+}
+
+/*.story h6,
+.story h2,
+.story p{
+  background-color:rgb(255, 255, 255, 0.5);
+  background-size: contain;
+  padding-left: 10px;
+}*/
+
+section.second > section > section{
+  margin-top: 50px;
+}
+.second{
+  background-image: url("https://i.imgur.com/XhOh6CO.jpg");
+  background-repeat:no-repeat;
+}
+
+
+/******************************************
+/* Order Online
+/*******************************************/
+
+.menu{
+  margin: 2% 5%;
+  width: 85%;
+  text-align: center;
+}
+
+
+
+.menu h2,
+.menu ul{
+  padding-top: 20px;
+}
+
+
+
+.flex-grid{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.col{
+  flex:1;
+}
+
+.col img{
+  width: 80%;
+  height: 250px;
+}
+
+section li{
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+section > ul > li{
+  border-left: solid 2px black;
+  border-right: solid 2px black;
+}
+/******************************************
+/* Hours
+/*******************************************/
+
+.hours{
+  text-align: center;
+  margin: 10px 5%;
+}
+.hours h2,
+.hours h3{
+  padding-top: 20px;
+}
+
+.split{
+  float: left;
+  width: 50%;
+  
+}
+
+section.hours section{
+  padding-top: 1%;
+}
+
+.hours img{
+  width: 40%;
+  padding: 2rem 0px;
+}
+
+.hours h6{
+  line-height: 4rem;
+  font-size: 1rem;
+}
+
+.hours h4{
+  font-size: 2rem;
+}
+
+
+
+/******************************************
+/* Testimonials
+/*******************************************/
+
+.test{
+  margin: 2% 2%;
+  text-align: center;
+}
+
+.test img{
+  height: 150px;
+  border-radius: 100%;
+}
+
+.test h4{
+  font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.test p{
+  font-size: 1.3rem;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+/******************************************
+/* Media Queries
+/*******************************************/
+#burger{
+  display:none
+}
+
+@media (max-width: 800px) {
+  nav{
+    display:none
+  }
+  i{
+    display:inline-block
+    float:right;
+  }
+  
+  header{
+     background-position: center;
+  }
+  
+  .second{
+     background: white;
+  }
+  
+  .flex-grid{
+    flex-direction:column;
+  }
+  
+  .flex-grid:last-child{
+    display:none;
+  }
+  
+  .col img{
+    width:100%;
+    height:auto;
+  }
+  
+  .col {
+    width:50%;
+    height:auto;
+    margin: 0 auto;
+  }
+  
+  .story{
+    margin:0 auto;
+    width: 90%
+  }
+  
+  section.second,
+  section.menu,
+  section.hours{
+    border-top: solid 1px black
+  }
+  
+  header>*{
+    margin: 0 auto;
+  }
+  
+  .split{
+    float:none;
+    margin: 0 auto;
+  }
+  
+}

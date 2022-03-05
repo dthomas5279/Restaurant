@@ -377,3 +377,57 @@ section.hours section{
   }
   
 }
+
+@media screen and (max-width: 900px){
+
+  .second h2, h1{
+    margin: 0;
+    font-size: 3rem;
+    width: 70%;
+    padding-top: 2rem;
+    
+   
+  }
+
+  h1{
+    padding-top: 10rem;
+  }
+
+  nav{
+    display: none;
+  }
+
+  #burger{
+    display: unset;
+  }
+
+  h2.menu,
+  h2.hours,
+  h2.test{
+    text-align: center;
+  }
+
+  
+  header{
+    background-size: cover;
+    background-image: url("https://i.imgur.com/USdJoVr.jpg");
+    
+  }
+  .hours .split{
+    border: none;
+  }
+
+  .flex-grid{
+    width: 100%;
+  }
+
+  .col{
+    width: 100%;
+  }
+
+  .story h6,
+.story h2,
+.story p{
+  width: fit-content;
+}
+}
